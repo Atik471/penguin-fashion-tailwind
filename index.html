@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .roboto {
+        font-family: "Roboto", sans-serif;
+      }
+      .bebas-neue {
+        font-family: "Bebas Neue", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="roboto">
+    <header class="bg-[#FFFBF0]
+    px-4 pt-7 lg:px-[10%] lg:pt-12 pb-16">
+      <!-- NavBar -->
+      <nav class="flex justify-between items-center pb-5">
+        <div>
+          <img src="icons/logo.png" alt="penguin fashion" class="h-6 lg:h-10" />
+        </div>
+        <div class="hidden lg:block">
+          <ul class="flex gap-12 text-base font-medium">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="w-6 block lg:hidden">
+            <img src="icons/menu.png" alt="menu">
+        </div>
+      </nav>
+      <!-- banner -->
+      <div class="flex justify-between flex-col lg:flex-row">
+        <div class="mt-[3.2rem] lg:mt-[6rem]">
+          <h1 class="uppercase bebas-neue text-[#363958] text-6xl lg:text-[5rem] leading-[3.8rem] lg:leading-[6rem]"><span class="text-[#FABE4C] ">Be the penguin</span> <br />of winter</h1>
+          <p class="text-[#3E3E3E] mb-2">
+            Buy the best winter clothes for men and <br>women from Penguin Fashion
+          </p>
+          <button
+            class="flex h-14 bg-gradient-to-b from-[#A4BC46] to-[#85A019] px-8 py-4 gap-2 rounded-lg text-white font-medium text-base"
+          >
+            <img src="icons/shopping-cart 1.png" alt="cart" class="w-6" />
+            BUY NOW
+          </button>
+        </div>
+        <div class="w-[92%] lg:w-[38%] lg:mt-0 mt-10">
+          <img src="images/model.png" alt="model" />
+        </div>
+      </div>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+  </body>
 </html>
